@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title></title>
 </head>
+<body style="font-family:Arial, Verdana, sans-serif">
+
 <body>
 <div>
     <th:block th:each="msg : ${messages}">
         <h1 th:text="${msg}"></h1>
     </th:block>
 </div>
+<hr>
+<a href="/cars"><b>To cars</b></a>
 </body>
 </html>
