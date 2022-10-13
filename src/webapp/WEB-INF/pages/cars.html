@@ -17,7 +17,7 @@
             <th>Series</th>
             <th>Color</th>
         </tr>
-        <tr th:each ="car : ${cars}">
+        <tr th:each="car : ${cars}">
             <td th:text="${car.getModel()}">...</td>
             <td th:text="${car.getSeries()}">...</td>
             <td th:text="${car.getColor()}">...</td>

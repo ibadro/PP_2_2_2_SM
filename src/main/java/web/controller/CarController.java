@@ -23,9 +23,11 @@ public class CarController {
 
     @GetMapping()
     public String getCars(@RequestParam(value = "count", defaultValue = "5") int count, Model model) {
-        if (count < 0){
+        if (count < 0) {
             System.out.println(" number is positive ");
-        } else { model.addAttribute("cars", carService.getCars(count));}
+        } else {
+            model.addAttribute("cars", carService.getCars(count));
+        }
         return "cars";
     }
 
